@@ -1,0 +1,24 @@
+
+import { useEffect, useState } from 'react'
+import './App.css'
+
+function App() {
+
+  const [count , setCount] = useState(0);
+  
+  useEffect(() =>{
+    setTimeout(() =>{
+      setCount(count => count+1);
+    },2000)
+  },[])
+
+  return (
+    <>
+    
+    <h2>I have render {count} times !</h2>
+    
+    </>
+  )
+}
+
+export default App

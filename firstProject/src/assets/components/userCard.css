@@ -1,0 +1,16 @@
+.userContainer{
+    background-color: #923939;
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#userPic{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+   
+}

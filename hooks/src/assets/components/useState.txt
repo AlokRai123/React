@@ -1,0 +1,56 @@
+import React, { useState } from 'react'
+import './App.css'
+
+function App() {
+
+  // const [car , setCar] = useState({
+  //   model : "ferrari",
+  //   color : 'red',
+  //   year : '2024',
+
+
+  // })
+  // const [color, setColor] = useState("oragne");
+  
+  // // let color = "oragne";
+  // const changeColor = () =>{
+  //   setColor('blue');}
+
+  // const changeColor = () =>{
+     
+  //   setCar((prev) =>{
+  //     return {...prev,color : "blue"}
+  //   })
+  // }
+
+  const [count , setCount] = useState(0);
+
+  // const increseCount = () => {
+  //   setCount(() => count+1);
+  // }
+   const increseCount = () => {
+    setCount(prev => prev+1);
+    setCount(prev => prev+1);
+    setCount(prev => prev+1);
+    setCount(prev => prev+1);
+  }
+  
+
+  return (
+    <>
+
+    <h1>count : {count} </h1>
+    <button onClick={increseCount}>increase</button>
+     
+     {/* <h1>my {car.model}</h1>
+     <h2>it is a {car.color} Roma from {car.year}</h2>
+     <button onClick={changeColor}>blue</button> */}
+
+
+      {/* <h1>My favourate color is {color} !</h1>
+      <button onClick={changeColor}>blue</button> */}
+    </>
+  )
+}
+
+export default App
